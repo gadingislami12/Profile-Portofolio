@@ -168,6 +168,27 @@ nav {
 }
 .score-value { font-size: 0.85rem; color: var(--accent-light); white-space: nowrap; }
 
+/* ===== EXPERIENCE LIST ===== */
+.exp-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.exp-list li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding-left: 16px;
+  position: relative;
+}
+.exp-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-light);
+}
+
 /* ===== SKILLS ===== */
 .skills-grid {
   display: grid;
